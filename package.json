@@ -15,9 +15,14 @@
   "author": "moritz.rebbert@udo.edu",
   "license": "ISC",
   "devDependencies": {
+    "@types/howler": "^2.2.7",
+    "@types/node": "^18.13.0",
     "prettier": "^2.8.7",
     "typescript": "^5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-watch": "^0.1.1"
+  },
+  "dependencies": {
+    "howler": "2.1.3"
   }
 }

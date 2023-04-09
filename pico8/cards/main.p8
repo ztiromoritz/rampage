@@ -14,9 +14,7 @@ function _update60()
 end
 
 function _draw()
-
  cls()
- print("hello world",30,30,15)
  print("current_trigger "
  	..current_trigger)
  print("next_send       "

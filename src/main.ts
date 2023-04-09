@@ -1,3 +1,5 @@
+import { createSound } from "./sounds";
+
 export const hello = "world";
 
 const fps = 120;
@@ -10,9 +12,11 @@ function tick() {
 }
 tick();
 
+const snd = createSound("laserShoot");
 const COMMANDS: ((...args: number[]) => Promise<void>)[] = [];
 COMMANDS[0] = async function hsfx(x: number, y: number, sound: number) {
   console.log("hsfx", { x, y, sound });
+  snd?.play();
 };
 
 function createCommandHandler() {

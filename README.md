@@ -34,6 +34,7 @@ There might be easier solutions for the game, but I like and know pico-8s simple
  * [ ] tts
  * [ ] Loading Screen
  * [ ] subtitle/aria live region
+ * [ ] wasm Export 
  * [ ] Settings
    * [ ] Select tts, aria-live, 
    * [ ] recorded sounds
