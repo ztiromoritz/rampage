@@ -1,6 +1,8 @@
 # rampage - an audio spache shooter  
-## My attempt for the games for blind gamers jam
 
+My attempt for the games for blind gamers jam
+
+## what is this?
 I try to build a space shooter or shmup using 
  * pico-8 as game engine
  * the pico-8 html import to add additional apis like:
@@ -10,7 +12,7 @@ I try to build a space shooter or shmup using
 
 There might be easier solutions for the game, but I like and know pico-8s simple API. 
 
-# Development
+## development
  * Make sure there is a copy of pico-8 in the bin folder
  * Start pico8 in one terminal `npm run p8`
  * Start the vite dev server in another terminal `npm run dev`
@@ -19,7 +21,7 @@ There might be easier solutions for the game, but I like and know pico-8s simple
  * If you hit save in pico8 the `public/p8/export/main.js` should be updated
 
 
-# TODO
+## TODO
  * [x] download pico-8
  * [x] start pico-8 from command line
  * [x] basic pico-8 dev cycle
