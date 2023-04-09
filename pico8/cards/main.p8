@@ -2,19 +2,59 @@ pico-8 cartridge // http://www.pico-8.com
 version 41
 __lua__
 function _init()
-	counter=0
+
 end
 
 function _update60()
- --gpio 0x5f80..0x5fff
- counter=(counter+1)%256
-	poke(0x5f80, counter)	
+	tick_commands()
+	if(btnp(❎)) then
+	 hsfx(1,2,0)
+	end
 end
 
 function _draw()
 
  cls()
- print("hello world",30,30,8)
+ print("hello world",30,30,15)
+ print("current_trigger "
+ 	..current_trigger)
+ print("next_send       "
+  ..next_send
+ )
+end
+-->8
+current_trigger=0
+next_send=0
+queue={}
+
+
+function tick_commands()
+ if next_send~=current_trigger then
+ 	next_send=(next_send+1)%256
+ 	local e = queue[next_send]
+ 	poke(0x5f80, next_send)
+ 	poke(0x5f81, e.cmd)
+ 	local i=0
+ 	for a in all(e.args) do
+   poke(0x5f82+i,a)	
+   i+=1	
+ 	end
+ end	
+end
+
+
+function enq_command(cmd,args)
+	args = args or {}
+	current_trigger=
+		(current_trigger+1)%256
+	queue[current_trigger]={
+	 cmd=cmd,
+	 args=args
+	}
+end
+
+function hsfx(x,y,sound)
+	enq_command(0,{x,y,sound})
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

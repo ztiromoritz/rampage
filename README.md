@@ -20,20 +20,20 @@ There might be easier solutions for the game, but I like and know pico-8s simple
 
 
 # TODO
-[x] download pico-8
-[x] start pico-8 from command line
-[x] basic pico-8 dev cycle
-[x] Basic webapp
-[ ] Loading Screen
-[ ] GPIO RPC protocoll
-[ ] Add howler
-[ ] hsfx(x,y,sound) - spacial
-[ ] speech(x,y,str)
-[ ] Game Menu
-[ ] tts
-[ ] subtitle/aria live region
-[ ] Settings
-    [ ] Select tts, aria-live, 
-    [ ] recorded sounds
-    [ ] Select volumes
-[ ] Sound glossar
+ * [x] download pico-8
+ * [x] start pico-8 from command line
+ * [x] basic pico-8 dev cycle
+ * [x] Basic webapp
+ * [x] GPIO call protocol
+ * [ ] Add howler
+ * [ ] hsfx(x,y,sound) - spacial
+ * [ ] speech(x,y,str)
+ * [ ] Game Menu
+ * [ ] tts
+ * [ ] Loading Screen
+ * [ ] subtitle/aria live region
+ * [ ] Settings
+   * [ ] Select tts, aria-live, 
+   * [ ] recorded sounds
+   * [ ] Select volumes
+ * [ ] Sound glossar
