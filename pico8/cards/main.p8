@@ -9,6 +9,7 @@ function _update60()
 	tick_commands()
 	if(btnp(❎)) then
 	 hsfx(1,2,0)
+	 hsfx(2,10,2)
 	end
 end
 
