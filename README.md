@@ -12,13 +12,18 @@ There might be easier solutions for the game, but I like and know pico-8s simple
 
 # Development
  * Make sure there is a copy of pico-8 in the bin folder
+ * Start pico8 in one terminal `npm run p8`
+ * Start the vite dev server in another terminal `npm run dev`
+ * Visit [http://localhost:5173/](http://localhost:5173/)
+ * If you change files in `.src/` the page should be updated
+ * If you hit save in pico8 the `public/p8/export/main.js` should be updated
 
 
 # TODO
-[ ] download pico-8
-[ ] start pico-8 from command line
-[ ] basic pico-8 dev cycle
-[ ] Basic webapp
+[x] download pico-8
+[x] start pico-8 from command line
+[x] basic pico-8 dev cycle
+[x] Basic webapp
 [ ] Loading Screen
 [ ] GPIO RPC protocoll
 [ ] Add howler

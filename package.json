@@ -5,9 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "p8:export" : "./bin/pico-8/pico8 -export src/p8/main.js ./pico8/cards/main.p8",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "upgrade": "npx npm-check-updates -u --format group",
+    "p8:export": "./bin/pico-8/pico8 -export ./public/p8/export/main.js ./pico8/cards/main.p8",
     "p8": "./bin/pico-8/pico8  -root_path ./pico8/cards ./pico8/cards/main.p8"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "moritz.rebbert@udo.edu",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1",
+    "vite-plugin-watch": "^0.1.1"
+  }
 }

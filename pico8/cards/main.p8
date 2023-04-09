@@ -1,8 +1,14 @@
 pico-8 cartridge // http://www.pico-8.com
 version 41
 __lua__
+function _init()
+	counter=0
+end
+
 function _update60()
-	
+ --gpio 0x5f80..0x5fff
+ counter=(counter+1)%256
+	poke(0x5f80, counter)	
 end
 
 function _draw()
